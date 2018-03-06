@@ -1,0 +1,7 @@
+package observer;
+
+public class ConcreteObserver implements Observer {
+	public void notify(Subject sub) {
+		System.out.print("Change has occurred in "+sub.getName()+"!");
+	}
+}

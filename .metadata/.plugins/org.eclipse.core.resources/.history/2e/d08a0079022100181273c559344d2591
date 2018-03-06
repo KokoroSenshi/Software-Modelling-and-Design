@@ -1,0 +1,25 @@
+package observer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ConcreteSubject implements Subject {
+	private List<Observer> observers;
+	private String name;
+	public ConcreteSubject(int num, String name) {
+		observers = new ArrayList<Observer>(num);
+		this.name = name;
+	}
+	public void registerObserver(Observer obs) {
+		observers.add(obs);
+	}
+	public void deregisterObserver(Observer obs) {
+		observers.remove(obs);
+	}
+	public void notifyAllObserver() {
+		//for each observer in observers, <observer>.notify(this)
+	}
+	public String getName() {
+		return name;
+	}//remove?
+}

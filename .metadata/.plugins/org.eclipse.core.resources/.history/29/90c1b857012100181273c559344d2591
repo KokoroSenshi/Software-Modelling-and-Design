@@ -1,0 +1,14 @@
+package observer;
+
+public class ConcreteSubject implements Subject {
+	private List<Observer> observers;
+	public void registerObserver(Observer obs) {
+		
+	}
+	public void deregisterObserver(Observer obs) {
+		
+	}
+	public void notifyAllObserver() {
+		
+	}
+}

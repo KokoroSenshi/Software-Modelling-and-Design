@@ -1,0 +1,11 @@
+package observer;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		ConcreteObserver obs1 = new ConcreteObserver();
+		ConcreteObserver obs2 = new ConcreteObserver();
+		ConcreteObserver sub1 = new ConcreteSubject(2);
+	}
+
+}

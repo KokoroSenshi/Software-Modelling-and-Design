@@ -1,0 +1,17 @@
+package observer;
+import java.util.List;
+import com.unimelb.swen30006.monopoly.Player;
+
+public class ConcreteSubject implements Subject {
+	
+	private List<Player> players;
+	public void registerObserver(Observer obs) {
+		
+	}
+	public void deregisterObserver(Observer obs) {
+		
+	}
+	public void notifyAllObserver() {
+		
+	}
+}

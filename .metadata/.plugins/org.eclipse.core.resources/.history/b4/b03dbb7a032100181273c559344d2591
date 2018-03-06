@@ -1,0 +1,15 @@
+package observer;
+
+public class Driver {
+	public static final int NUM_OBSERVERS = 2;
+	
+	public static void main(String[] args) {
+		ConcreteObserver obs1 = new ConcreteObserver();
+		ConcreteObserver obs2 = new ConcreteObserver();
+		ConcreteSubject sub1 = new ConcreteSubject(NUM_OBSERVERS,"Super Subject");
+		sub1.registerObserver(obs1);
+		sub1.registerObserver(obs2);
+		sub1.notifyAllObserver();
+	}
+
+}

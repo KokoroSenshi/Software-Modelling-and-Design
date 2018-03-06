@@ -1,0 +1,13 @@
+package observer;
+
+public class ConcreteObserver implements Observer {
+	
+	public ConcreteObserver() {
+		//No variables or setup needed yet
+	}
+	
+	public void notify(Subject sub) {
+		System.out.println("Change has occurred in "+sub.toString()+"!");
+	}
+	
+}
